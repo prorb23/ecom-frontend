@@ -4,7 +4,7 @@ import { FaExclamationTriangle } from "react-icons/fa";
 
 const Products = () => {
   const isLoading = false;
-  const errorMessage = "Error while Loading this";
+  const errorMessage = "";
   const products = [
     {
       productId: 1,
@@ -12,7 +12,7 @@ const Products = () => {
       price: 29.99,
       image: "https://placehold.co/600x400",
       description: "High quality product",
-      quantity: 50,
+      quantity: 0,
       discount: 10,
       specialPrice: 26.99,
     },
@@ -25,16 +25,6 @@ const Products = () => {
       quantity: 30,
       discount: 15,
       specialPrice: 42.49,
-    },
-    {
-      productId: 3,
-      productName: "Product 3",
-      price: 39.99,
-      image: "https://placehold.co/600x400",
-      description: "Best selling product",
-      quantity: 75,
-      discount: 5,
-      specialPrice: 37.99,
     },
   ];
   return (
