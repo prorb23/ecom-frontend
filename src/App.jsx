@@ -1,14 +1,5 @@
+import Products from "./components/Products";
 
-import { FaBeer } from 'react-icons/fa'
-import './App.css'
-import Products from './components/Products'
-
-function App() {
-  return (
-     <div>
-       <Products />
-     </div>
-  )
+export default function App() {
+  return <Products />;
 }
-
-export default App

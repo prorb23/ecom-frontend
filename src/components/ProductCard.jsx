@@ -3,7 +3,7 @@ import { FaShoppingCart } from "react-icons/fa";
 import ProductViewModal from "./ProductViewModal";
 
 const ProductCard = ({
-  id: productId,
+  productId,
   productName,
   price,
   image,
@@ -27,7 +27,7 @@ const ProductCard = ({
       <div
         onClick={() => {
           handleProductView({
-            id: productId,
+            productId,
             productName,
             price,
             image,
@@ -50,7 +50,7 @@ const ProductCard = ({
         <h2
           onClick={() => {
             handleProductView({
-            id: productId,
+            productId,
             productName,
             price,
             image,
