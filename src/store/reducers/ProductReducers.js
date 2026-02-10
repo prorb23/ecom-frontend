@@ -11,7 +11,7 @@ const productReducer = (state = initialState, action) => {
     case "FETCH_PRODUCTS_SUCCESS":
       return {
         ...state,
-        products: action.payload.content,   // 🔥 THIS WAS MISSING
+        products: action.payload.contents || [],
         pagination: {
           pageNumber: action.payload.pageNumber,
           pageSize: action.payload.pageSize,
@@ -20,7 +20,6 @@ const productReducer = (state = initialState, action) => {
           lastPage: action.payload.lastPage,
         },
       };
-
     default:
       return state;
   }
